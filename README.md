@@ -27,7 +27,7 @@ Project Setup
 
 ```sh
 $ rails new angular_rails -d=mysql -T
-$ bundle installX
+$ bundle install
 $ rake db:create
 $ rails generate scaffold product name:string price:decimal descriprion:text image:string
 $ rake db:migrate
@@ -93,6 +93,7 @@ Note: Angular and Turbolinks can conflict with one another, so we disable them h
 //= require jquery_ujs
 
 // Add the following two lines
+
 //= require angular
 //= require main
 
