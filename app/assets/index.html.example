@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Demo</title>
+    <script src="javascripts/angular/angular.min.js"></script>
+    <script src="javascripts/angular/angular-route.min.js"></script>
+    <script src="javascripts/angular/angular-animate.min.js"></script>
+    <script src="javascripts/app.js"></script>
+    <script src="javascripts/controllers/controllers.js"></script>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+<div class="main" ng-view></div>
+</body>
+</html>
