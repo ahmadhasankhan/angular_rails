@@ -1,3 +1,30 @@
-<ul ng-repeat="product in products">
-    <li>{{product.name}} ({{product.id}})</li>
-</ul>
+<nav class="navbar navbar-inverse" role="navigation">
+    <ul class="nav nav-pills">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/#">Home</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#products">Products</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#list">Artists</a></li>
+    </ul>
+</nav>
+</br>
+<table class="table table-bordered table-hover">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Description</th>
+        <th>Edit</th>
+        <th>Delete</th>
+        <th>Date Modified</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="product in products">
+        <td><a href="#/product/{{product.id}}">{{ product.name }}</a></td>
+        <td>{{ product.price }}$</td>
+        <td>{{ product.description }}</td>
+        <td>Working</td>
+        <td>{{ product.created_at }}</td>
+
+    </tr>
+    </tbody>
+</table>

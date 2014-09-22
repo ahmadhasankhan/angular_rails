@@ -6,4 +6,17 @@
     </ul>
 </nav>
 </br>
-<h1>{{welcome}}</h1>
+<section class="artistinfo">
+    <div class="artist cf" ng-model="products">
+        <h1>Name:{{products.name}}</h1>
+
+        <div class="info">
+            <h2>Price{{products.price}}</h2>
+
+            <h3>Description{{products.description}}</h3>
+
+            <div class="bio">Created at{{products.created_at}}</div>
+        </div>
+    </div>
+    <a href="#/products">&laquo; Back to search</a>
+</section>
