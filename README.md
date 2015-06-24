@@ -13,7 +13,7 @@ This is the first rails application in which i am going to use angularjs, in thi
 Functionalities
 -----------
 
-These are the functionalities that i am going to imlement in this application:
+These are the functionalities that i am going to implement in this application:
 
 * A home page
 * Add product
